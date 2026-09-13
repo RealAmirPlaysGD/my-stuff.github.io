@@ -83,7 +83,7 @@ const programs = [
         size: "4,242 KB",
         date: "2026-09-13",
         file: "downloads/Desktop Goose But With Some Mods.zip",
-        icon: "",
+        icon: "downloads/Screenshot 2026-09-13 151829.png",
         downloads: null
     }
 
