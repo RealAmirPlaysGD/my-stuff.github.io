@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="My Stuff — software, tools and projects I've made."
+    >
+
+    <meta name="theme-color" content="#0b0f19">
+
+    <title>My Stuff — Software & Projects</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="site-shell">
+
+        <!-- =========================
+             Navigation
+        ========================== -->
+        <header class="navbar">
+            <div class="container nav-inner">
+
+                <a class="brand" href="#top" aria-label="My Stuff home">
+                    <span class="brand-mark">MS</span>
+                    <span class="brand-text">My Stuff</span>
+                </a>
+
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+                    <a href="#downloads">Downloads</a>
+                    <a href="#about">About</a>
+                    <a
+                        href="https://github.com/my-stuff/my-stuff.github.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="top">
+
+            <!-- =========================
+                 Hero
+            ========================== -->
+            <section class="hero">
+                <div class="container hero-content">
+
+                    <div class="hero-badge">
+                        <span class="status-dot"></span>
+                        Personal software hub
+                    </div>
+
+                    <h1>My Stuff</h1>
+
+                    <p class="hero-subtitle">
+                        Software, tools and projects I've made.
+                    </p>
+
+                    <p class="hero-description">
+                        Browse my personal programs, experiments and useful tools.
+                        Everything here is available directly from GitHub Pages.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#downloads">
+                            Browse Downloads
+                            <span aria-hidden="true">↓</span>
+                        </a>
+
+                        <a
+                            class="button button-secondary"
+                            href="https://github.com/my-stuff/my-stuff.github.io"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- =========================
+                 Downloads
+            ========================== -->
+            <section class="downloads-section" id="downloads">
+                <div class="container">
+
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-eyebrow">SOFTWARE LIBRARY</span>
+                            <h2>Downloads</h2>
+                            <p>
+                                Programs and projects available to download.
+                            </p>
+                        </div>
+
+                        <div class="program-count" id="programCount">
+                            0 programs
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="search-area">
+                        <label class="search-box" for="searchInput">
+                            <span class="search-icon" aria-hidden="true">⌕</span>
+
+                            <input
+                                id="searchInput"
+                                type="search"
+                                placeholder="Search programs..."
+                                autocomplete="off"
+                                spellcheck="false"
+                            >
+
+                            <kbd>/</kbd>
+                        </label>
+
+                        <div
+                            class="filter-bar"
+                            id="filterBar"
+                            aria-label="Filter by platform"
+                        >
+                            <button
+                                class="filter-button active"
+                                type="button"
+                                data-platform="All"
+                            >
+                                All
+                            </button>
+
+                            <button
+                                class="filter-button"
+                                type="button"
+                                data-platform="Windows"
+                            >
+                                Windows
+                            </button>
+
+                            <button
+                                class="filter-button"
+                                type="button"
+                                data-platform="macOS"
+                            >
+                                macOS
+                            </button>
+
+                            <button
+                                class="filter-button"
+                                type="button"
+                                data-platform="Linux"
+                            >
+                                Linux
+                            </button>
+
+                            <button
+                                class="filter-button"
+                                type="button"
+                                data-platform="Android"
+                            >
+                                Android
+                            </button>
+
+                            <button
+                                class="filter-button"
+                                type="button"
+                                data-platform="Other"
+                            >
+                                Other
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Generated cards are inserted here by script.js -->
+                    <div
+                        class="program-grid"
+                        id="programGrid"
+                        aria-live="polite"
+                    ></div>
+
+                    <!-- Empty results -->
+                    <div
+                        class="empty-state hidden"
+                        id="emptyState"
+                        role="status"
+                    >
+                        <div class="empty-icon">⌕</div>
+                        <h3>No programs found</h3>
+                        <p>
+                            Try a different search term or platform filter.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- =========================
+                 About
+            ========================== -->
+            <section class="about-section" id="about">
+                <div class="container">
+
+                    <div class="about-card">
+
+                        <div class="about-icon" aria-hidden="true">
+                            ✦
+                        </div>
+
+                        <div class="about-content">
+                            <span class="section-eyebrow">ABOUT</span>
+
+                            <h2>A home for my projects.</h2>
+
+                            <p>
+                                My Stuff is where I publish my personal programs,
+                                tools, experiments and other projects I've made.
+                                Each download is hosted directly alongside this
+                                website using GitHub Pages.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- =========================
+             Footer
+        ========================== -->
+        <footer class="footer">
+            <div class="container footer-inner">
+
+                <div class="footer-left">
+                    <strong>© 2026 My Stuff</strong>
+                    <span>Built for sharing software.</span>
+                </div>
+
+                <div class="footer-right">
+
+                    <a
+                        href="https://github.com/my-stuff/my-stuff.github.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub Repository
+                    </a>
+
+                    <span class="footer-divider"></span>
+
+                    <span class="github-pages-label">
+                        <span class="pages-dot"></span>
+                        Hosted with GitHub Pages
+                    </span>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- =========================
+         Details Modal
+    ========================== -->
+    <div
+        class="modal hidden"
+        id="detailsModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+        aria-describedby="modalDescription"
+    >
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <div class="modal-card">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                type="button"
+                aria-label="Close details"
+            >
+                ×
+            </button>
+
+            <div class="modal-header">
+
+                <div
+                    class="modal-icon"
+                    id="modalIcon"
+                    aria-hidden="true"
+                >
+                    ▣
+                </div>
+
+                <div>
+                    <span class="modal-platform" id="modalPlatform">
+                        Windows
+                    </span>
+
+                    <h2 id="modalTitle">Program</h2>
+
+                    <span
+                        class="modal-version"
+                        id="modalVersion"
+                    >
+                        Version 1.0.0
+                    </span>
+                </div>
+
+            </div>
+
+            <p
+                class="modal-description"
+                id="modalDescription"
+            ></p>
+
+            <div class="modal-meta">
+
+                <div class="modal-meta-item">
+                    <span>Platform</span>
+                    <strong id="modalPlatformValue">Windows</strong>
+                </div>
+
+                <div class="modal-meta-item">
+                    <span>File size</span>
+                    <strong id="modalSize">25 MB</strong>
+                </div>
+
+                <div class="modal-meta-item">
+                    <span>Release date</span>
+                    <strong id="modalDate">2026-09-13</strong>
+                </div>
+
+                <div
+                    class="modal-meta-item"
+                    id="modalDownloadsWrapper"
+                >
+                    <span>Downloads</span>
+                    <strong id="modalDownloads">—</strong>
+                </div>
+
+            </div>
+
+            <div class="modal-actions">
+                <a
+                    class="button button-primary modal-download"
+                    id="modalDownload"
+                    href="#"
+                >
+                    Download
+                    <span aria-hidden="true">↓</span>
+                </a>
+
+                <button
+                    class="button button-secondary"
+                    id="modalCancel"
+                    type="button"
+                >
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
