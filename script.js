@@ -75,14 +75,14 @@ const programs = [
     */
 
     {
-        name: "My Program",
-        version: "1.0.0",
+        name: "Desktop Goose But With Some Mods",
+        version: "0.3.1",
         description:
-            "A sample program entry. Replace this information with one of your own programs.",
+            "its just Desktop Goose But With Some Mods",
         platform: "Windows",
-        size: "25 MB",
+        size: "4,242 KB",
         date: "2026-09-13",
-        file: "downloads/my-program.zip",
+        file: "downloads/Desktop Goose But With Some Mods.zip",
         icon: "",
         downloads: null
     }
